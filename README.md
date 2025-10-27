@@ -23,3 +23,5 @@ A simple web-based calculator built with HTML, CSS, and JavaScript. It supports 
 - Written in plain JavaScript without frameworks
 - Display length is automatically limited based on screen width
 - Decimal numbers are limited to 8 digits after the decimal point
+
+[![Calculator Screenshot](screenshot.png)](screenshot.png)
