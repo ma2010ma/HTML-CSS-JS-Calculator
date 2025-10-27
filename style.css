@@ -1,0 +1,201 @@
+body {
+    display : grid;
+    place-items : center;
+    height: 100vh;
+    margin : 0;
+    font-family : Arial, sans-serif;
+    color : white;
+    background : #ccc;
+    user-select : none;
+}
+
+.tr-container {
+    display : grid;
+    grid-template-areas :
+        "copy-button copy-result copy-result copy-result"
+        "result result result result"
+        "plus-symbol minus-symbol multiplied-symbol divided-symbol"
+        "seven eight nine c"
+        "four five six delete-button"
+        "one two three equals-button"
+        "comma-symbol zero sign-button equals-button";
+    grid-template-columns : repeat(4, 1fr);
+    grid-template-rows : repeat(6, 1fr);
+
+    width: 90vw;
+    max-width: 450px;
+    height: auto;
+    aspect-ratio: 3 / 4;
+
+    padding : 2px;
+    border-radius : 20px;
+
+    background : #171717;
+    box-shadow : 10px 15px 17px grey;
+}
+
+
+button {
+    border-radius : 0.5px;
+    font-size : 35px;
+    cursor : pointer;
+    outline: none;
+    border : solid #171717 2px;
+}
+
+.light:hover {
+    background : #ccc;
+}
+
+.light:active {
+    background : #666;
+}
+
+.dark:hover {
+    background : #888;
+}
+
+.dark:active {
+    background : #ddd;
+}
+
+.copy-button:hover {
+  background-color: #5e5e5e;
+}
+
+.copy-button:active {
+  background-color: #4e4e4e;
+}
+
+
+.light {
+    background : #b3b3b3;
+}
+
+.dark {
+    font-size : 50px;
+    background : #999;
+}
+
+.comma-symbol, .sign-button {
+    font-size : 40px !important;
+}
+
+
+.copy-button {
+    grid-area : copy-button;
+    height : 45px;
+    width : 45px;
+    padding : 0px;
+    margin : 5.5px 0px 0px 5.5px;
+    border-radius : 30px;
+    font-size : 22px !important;
+    background : #6e6e6e;
+}
+
+.copy-result {
+    grid-area : copy-result;
+    height : 45px;
+    font-size : 20px;
+    padding : 0px;
+    margin : 18px 0px 0px -15px;
+    border : none;
+    background : transparent;
+}
+
+.result {
+    grid-area : result;
+    text-align : right;
+    font-size : 70px;
+    padding : 15px;
+}
+
+.plus-symbol {
+    grid-area : plus-symbol;
+    border-top-left-radius : 20px;
+}
+
+.minus-symbol {
+    grid-area : minus-symbol;
+}
+
+.multiplied-symbol {
+    grid-area : multiplied-symbol;
+}
+
+.divided-symbol {
+    grid-area : divided-symbol;
+    border-top-right-radius : 20px;
+}
+
+.zero {
+    grid-area : zero;
+}
+
+.one {
+    grid-area : one;
+}
+
+.two {
+    grid-area : two;
+}
+
+.three {
+    grid-area : three;
+}
+
+.four {
+    grid-area : four;
+}
+
+.five {
+    grid-area : five;
+}
+
+.six {
+    grid-area : six;
+}
+
+.seven {
+    grid-area : seven;
+}
+
+.eight {
+    grid-area : eight;
+}
+
+.nine {
+    grid-area : nine;
+}
+
+.comma-symbol {
+    grid-area : comma-symbol;
+    border-bottom-left-radius : 20px;
+}
+
+.sign-button {
+    grid-area : sign-button;
+}
+
+.delete-button {
+    grid-area : delete-button;
+}
+
+.equals-button { 
+    grid-area : equals-button;
+    border-bottom-right-radius : 20px;
+}
+
+.c {
+    grid-area : c;
+}
+
+footer {
+    position : fixed;
+    bottom : 0;
+    left : 0;
+    margin-left : 20px;
+    color : black;
+    font-size : 18px;
+    font-family: 'Times New Roman';
+}
