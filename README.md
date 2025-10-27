@@ -24,5 +24,15 @@ A simple web-based calculator built with HTML, CSS, and JavaScript. It supports 
 - Display length is automatically limited based on screen width
 - Decimal numbers are limited to 8 digits after the decimal point
 
+  ### Technologies Used:
+
+  - HTML5
+  - CSS3
+  - JavaScript (Vanilla JS)
+
 ## Preview
 [![Calculator Screenshot](screenshot.png)](screenshot.png)
+
+## About
+
+Created by Manuel Amberger, a student at a technical high school (HTL) in austria.
